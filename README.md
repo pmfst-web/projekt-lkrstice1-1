@@ -1,5 +1,5 @@
 # Projektne faze
-- [ ] - Opis projekta
+- [x] - Opis projekta
 - [ ] - Početna struktura aplikacije
 - [ ] - Prototip
 - [ ] - Konzultacije
@@ -7,13 +7,12 @@
 - [ ] - Obrana projekta
 
 # Opis projekta
-## Kratki opis
-Ovdje ide opis projekta
+Aplikacija za učenje stranih jezika. Korisnik odabere jezik koji želi naučiti te odabare razlog zbog kojeg ga želi naučiti te ima li prethodnog znanja tog jezika. Zatim se generiraju riječi i izrazi na odabranom jeziku te korisnik u obliku kviza bira odgovor tj. prijevod izraza.
 
 ## Popis funkcionalnosti
-1. a
-2. b
-3. c
+1. Odabir jezika, razine znanja te razloga učenja
+2. Učenje jezika pomoću fraza
+3. Prikaz postotka riješenosti
 
 
 ## UPUTE
