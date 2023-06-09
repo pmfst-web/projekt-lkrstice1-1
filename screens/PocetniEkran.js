@@ -50,9 +50,9 @@ const stil = StyleSheet.create({
     upute: {
         marginLeft: 20,
         marginRight: 20,
-        fontWeight: 'bold',
         fontSize: 14,
-        color: Boje.Tekst
+        color: Boje.Tekst,
+        fontFamily: "FaunaOne-Regular"
     },
     uputeV: {
         alignItems: 'center',
