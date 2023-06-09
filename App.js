@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import PocetniEkran from './screens/PocetniEkran';
+import OdabirJezika from './screens/OdabirJezika';
+import Razlog from './screens/Razlog';
+import Predzanje from './screens/Predznanje';
 
 import * as Font from 'expo-font'
 import AppLoading from 'expo-app-loading'
@@ -27,11 +30,8 @@ export default function App() {
 
   return (
     <View>
-      <PocetniEkran />
+      <Predzanje />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  
-});
