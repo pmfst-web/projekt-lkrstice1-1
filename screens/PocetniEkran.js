@@ -4,7 +4,7 @@ import Boje from '../constants/Boje';
 import Btn from '../components/Btn';
 
 
-const PocetniEkran = () => {
+const PocetniEkran = ({ navigation }) => {
     return(
         <View>
             <View style={stil.ekran}>
@@ -24,7 +24,7 @@ const PocetniEkran = () => {
                 <View style={stil.btn}>
                     <Btn 
                         title = "Kreni"
-                        onPress = {() => {console.log("Klik")}}
+                        onPress = {() => {navigation.navigate('Odabir')}}
                     />
                 </View>
             </View>

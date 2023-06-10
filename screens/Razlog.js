@@ -3,14 +3,38 @@ import { View, Text, StyleSheet } from "react-native";
 import Boje from "../constants/Boje";
 import JezikBtn from "../components/JezikBtn";
 
-const Razlog = () => {
+const Razlog = ({ route, navigation }) => {
+    const { jezik } = route.params
     return(
         <View style={stil.ekran}>
             <Text style={stil.naslov}>Razlog</Text>
-            <JezikBtn title="Prijatelji/obitelj" onPress = { () => {console.log("Klik")} } />
-            <JezikBtn title="Posao/škola" onPress = { () => {console.log("Klik")} } />
-            <JezikBtn title="Hobi" onPress = { () => {console.log("Klik")} } />
-            <JezikBtn title="Ostalo" onPress = { () => {console.log("Klik")} } />
+            <JezikBtn 
+                title="Prijatelji/obitelj" 
+                onPress = { () => {navigation.navigate('Predznanje', {
+                    razlog: 'obitelj',
+                    jezik
+                })} } 
+            />
+            <JezikBtn 
+                title="Posao/škola" 
+                onPress = {() => {navigation.navigate('Predznanje', {
+                    razlog: 'posao',
+                    jezik
+                })}}
+            />
+            <JezikBtn title="Hobi" 
+                onPress = {() => {navigation.navigate('Predznanje', {
+                    razlog: 'hobi',
+                    jezik
+                })}} 
+            />
+            <JezikBtn 
+                title="Ostalo" 
+                onPress = {() => {navigation.navigate('Predznanje', {
+                    razlog: 'ostalo',
+                    jezik
+                })}} 
+            />
         </View>
     )
 }
