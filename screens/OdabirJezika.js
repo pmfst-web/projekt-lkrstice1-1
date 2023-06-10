@@ -19,8 +19,6 @@ const stil = StyleSheet.create({
     ekran: {
         alignItems: 'center',
         marginTop: 180,
-        backgroundColor: Boje.Pozadina,
-
     },
     naslov: {
         fontSize: 20,

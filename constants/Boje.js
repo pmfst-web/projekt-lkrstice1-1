@@ -3,6 +3,5 @@ export default {
     Tekst: "#581845",
     Tipka: "#581845",
     Bijela: "#FFFFFF",
-    Jezik: "#E4F7C1",
-    Pozadina: "#FAFAFC"
+    Jezik: "#E4F7C1"
 }

@@ -18,9 +18,7 @@ const Razlog = () => {
 const stil = StyleSheet.create({
     ekran: {
         alignItems: 'center',
-        marginTop: 180,
-        backgroundColor: Boje.Pozadina,
-
+        marginTop: 180
     },
     naslov: {
         fontSize: 20,

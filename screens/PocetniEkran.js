@@ -48,9 +48,9 @@ const stil = StyleSheet.create({
         marginTop: 10
     },
     upute: {
-        marginLeft: 20,
-        marginRight: 20,
-        fontSize: 14,
+        marginLeft: 10,
+        marginRight: 10,
+        fontSize: 13,
         color: Boje.Tekst,
         fontFamily: "FaunaOne-Regular"
     },

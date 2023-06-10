@@ -17,3 +17,10 @@ Pocetak | Kraj
 17:05  | 23:00
 ### Kratki opis promjena
 Definirala sam izgled ekrana. Kasnije planiram povezati, tj. dodati navigaciju te definirati model po kojem će se prikazivati izrazi koje će korisnik kasnije prevoditi
+
+## 10.06.2023.
+Pocetak | Kraj
+------- | ----
+13:30  | 
+### Kratki opis promjena
+
