@@ -21,6 +21,7 @@ Definirala sam izgled ekrana. Kasnije planiram povezati, tj. dodati navigaciju t
 ## 10.06.2023.
 Pocetak | Kraj
 ------- | ----
-13:30  | 
+13:30  | 19:00
 ### Kratki opis promjena
+Dodala sam navigaciju među ekranima te razmjenu podataka. Također, sam implementirala model za definiciju podataka te ispisala testne podatke.
 
