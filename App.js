@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import PocetniEkran from './screens/PocetniEkran';
 import OdabirJezika from './screens/OdabirJezika';
 import Razlog from './screens/Razlog';
 import Predzanje from './screens/Predznanje';
+import Kviz from './screens/Kviz';
 
 import * as Font from 'expo-font'
 import AppLoading from 'expo-app-loading'
+
+const Stack = createNativeStackNavigator();
 
 const dohvatiFont = () => {
     return Font.loadAsync ({
@@ -29,9 +35,30 @@ export default function App() {
   }
 
   return (
-    <View>
-      <PocetniEkran />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen 
+          name='Pocetna' 
+          component={PocetniEkran} 
+        />
+        <Stack.Screen 
+          name='Odabir' 
+          component={OdabirJezika} 
+        />
+        <Stack.Screen 
+          name='Razlog' 
+          component={Razlog} 
+        />
+        <Stack.Screen 
+          name='Predznanje' 
+          component={Predzanje} 
+        />
+        <Stack.Screen 
+          name='Kviz' 
+          component={Kviz} 
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
