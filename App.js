@@ -30,7 +30,7 @@ export default function App() {
 
   return (
     <View>
-      <Predzanje />
+      <PocetniEkran />
     </View>
   );
 }
