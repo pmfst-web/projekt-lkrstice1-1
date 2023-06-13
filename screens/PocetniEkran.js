@@ -39,7 +39,8 @@ const stil = StyleSheet.create({
     },
     slika: {
         height: 400,
-        maxWidth: '100%'
+        maxWidth: '100%',
+        resizeMode: 'cover'
     },
     naslov: {
         fontFamily: 'ConcertOne-Regular',
