@@ -32,5 +32,12 @@ Pocetak | Kraj
 ### Kratki opis promjena
 Dodala sam zajednicki spremink te se filtriraju fraze s obzirom na uvjete. Jos samo preostaje dodati funkciju za unos korisnika i provjeru prijevoda.
 
+## 13.06.2023.
+Pocetak | Kraj
+------- | ----
+14:00   | 
+### Kratki opis promjena
+
+
 
 
