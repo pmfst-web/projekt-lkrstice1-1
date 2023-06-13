@@ -35,9 +35,9 @@ Dodala sam zajednicki spremink te se filtriraju fraze s obzirom na uvjete. Jos s
 ## 13.06.2023.
 Pocetak | Kraj
 ------- | ----
-14:00   | 
+14:00   | 15:40
 ### Kratki opis promjena
-
+Dodala sam logiku za pogadanje tocnog odgovora
 
 
 
