@@ -25,3 +25,10 @@ Pocetak | Kraj
 ### Kratki opis promjena
 Dodala sam navigaciju među ekranima te razmjenu podataka. Također, sam implementirala model za definiciju podataka te ispisala testne podatke.
 
+## 12.06.2023.
+Pocetak | Kraj
+------- | ----
+23:00  | 
+### Kratki opis promjena
+
+
