@@ -1,9 +1,6 @@
 import { IZRAZI } from "../../data/rjecnik"
 
-const izrazReducer = (a, b, c) => {
-    if(a === 'eng' && b === 'obitelj' && c === 'pocetnik'){
-        return IZRAZI
-    }
+const izrazReducer = () => {
     return IZRAZI
 }
 
