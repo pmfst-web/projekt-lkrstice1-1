@@ -1,8 +1,8 @@
 import Izraz from "../models/izraz";
 
 export const IZRAZI = [
-    new Izraz('eng', 'obitelj', 'pocetnik', 'Parents', 'roditelji'),
-    new Izraz('eng', 'obitelj', 'posjeduje', 'Relative', 'rodbina'),
+    new Izraz('eng', 'obitelj', 'pocetnik', 'Parents', 'Roditelji'),
+    new Izraz('eng', 'obitelj', 'posjeduje', 'Relative', 'Rodbina'),
     new Izraz('eng', 'posao', 'pocetnik', 'Co-worker', 'Suradnik'),
     new Izraz('eng', 'posao', 'posjeduje', 'Contributor', 'Suradnik'),
     new Izraz('eng', 'hobi', 'pocetnik', 'Fun', 'Zabava'),
