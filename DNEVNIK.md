@@ -28,7 +28,9 @@ Dodala sam navigaciju među ekranima te razmjenu podataka. Također, sam impleme
 ## 12.06.2023.
 Pocetak | Kraj
 ------- | ----
-23:00  | 
+23:00  | 12:45
 ### Kratki opis promjena
+Dodala sam zajednicki spremink te se filtriraju fraze s obzirom na uvjete. Jos samo preostaje dodati funkciju za unos korisnika i provjeru prijevoda.
+
 
 
