@@ -1,29 +1,47 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, Text, FlatList } from 'react-native';
+import { View, StyleSheet, Text, FlatList, Button, TextInput } from 'react-native';
 import Btn from '../components/Btn';
 import { useSelector } from 'react-redux';
 import izrazReducer from '../store/reducers/izraz';
-import Unos from '../components/Unos';
 
 const Kviz = ({ route, navigation }) => {
+    const [prijevod, setPrijevod] = useState('Pocetak');
     const {jezik, razlog, predznanje} = route.params
     const odabirIzraza = useSelector(izrazReducer)
-    const [unos, setUnos] = ''
 
     const prikazIzraza = (podaci) => {
         if(podaci.item.jezik === jezik && podaci.item.razlog === razlog && podaci.item.predznanje === predznanje){
-            return <Text style={stil.izrazT}>{podaci.item.fraza}</Text>
+            const provjera = (a, b) => {
+                if(a === b){
+                    return "Tocan odgovor"
+                }
+                return "Pokusajte ponovno"
+            }
+            return (
+                <View style={stil.ekran}>
+                    <Text style={stil.izrazT}>{podaci.item.fraza}</Text>
+                    <TextInput 
+                        style={stil.unos}
+                        placeholder='Unesi prijevod'
+                        onChangeText = {(val) => setPrijevod(val)}
+                    />
+                    <Btn
+                        title='Provjeri'
+                        onPress = {() => alert(provjera(podaci.item.prijevod, prijevod))}
+                    />
+                </View>
+            )
         }
     }
 
     return(
         <View style={stil.ekran}>
             <FlatList data={odabirIzraza} renderItem={prikazIzraza} style={stil.izraz}/>
-            <Unos value={unos} onChangeText={provjeraPrijevoda()}/>
             <Btn title="Odabir jezika" onPress={() => navigation.navigate('Odabir')} />
         </View>
     )
 }
+
 const stil = StyleSheet.create({
     ekran: {
         justifyContent: 'center',
@@ -35,7 +53,16 @@ const stil = StyleSheet.create({
     },
     izrazT: {
         fontFamily: 'FaunaOne-Regular',
-        fontSize: 45
+        fontSize: 45,
+        paddingBottom: 50
+    },
+    unos: {
+        borderWidth: 1,
+        borderColor: "#777",
+        width: 200,
+        height: 50,
+        marginBottom: 20,
+        paddingLeft: 20
     }
 
 })
