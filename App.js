@@ -14,6 +14,17 @@ import AppLoading from 'expo-app-loading'
 
 const Stack = createNativeStackNavigator();
 
+import { createStore, combineReducers } from 'redux';
+import izrazReducer from './store/reducers/izraz';
+
+const masterReducer = combineReducers({
+  izrazi: izrazReducer
+})
+
+const store = createStore(masterReducer)
+
+import { Provider } from 'react-redux';
+
 const dohvatiFont = () => {
     return Font.loadAsync ({
         'ConcertOne-Regular': require('./assets/fonts/ConcertOne-Regular.ttf'),
@@ -35,30 +46,32 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen 
-          name='Pocetna' 
-          component={PocetniEkran} 
-        />
-        <Stack.Screen 
-          name='Odabir' 
-          component={OdabirJezika} 
-        />
-        <Stack.Screen 
-          name='Razlog' 
-          component={Razlog} 
-        />
-        <Stack.Screen 
-          name='Predznanje' 
-          component={Predzanje} 
-        />
-        <Stack.Screen 
-          name='Kviz' 
-          component={Kviz} 
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen 
+            name='Pocetna' 
+            component={PocetniEkran} 
+          />
+          <Stack.Screen 
+            name='Odabir' 
+            component={OdabirJezika} 
+          />
+          <Stack.Screen 
+            name='Razlog' 
+            component={Razlog} 
+          />
+          <Stack.Screen 
+            name='Predznanje' 
+            component={Predzanje} 
+          />
+          <Stack.Screen 
+            name='Kviz' 
+            component={Kviz} 
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
   );
 }
 
