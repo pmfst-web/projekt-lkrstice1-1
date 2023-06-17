@@ -19,7 +19,7 @@ const Kviz = ({ route, navigation }) => {
             }
             return (
                 <View style={stil.ekran}>
-                    <Text style={stil.izrazT}>{podaci.item.fraza}</Text>
+                    <Text style={stil.izrazT}>{podaci.item.niz[Math.floor(Math.random()*podaci.item.niz.length)][0]}</Text>
                     <TextInput 
                         style={stil.unos}
                         placeholder='Unesi prijevod'
@@ -27,7 +27,7 @@ const Kviz = ({ route, navigation }) => {
                     />
                     <Btn
                         title='Provjeri'
-                        onPress = {() => alert(provjera(podaci.item.prijevod, prijevod))}
+                        onPress = {() => alert(provjera(podaci.item.niz[2][1], prijevod))}
                     />
                 </View>
             )
