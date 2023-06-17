@@ -9,28 +9,28 @@ const OdabirJezika = ({ route, navigation }) => {
         <View style={stil.ekran}>
             <Text style={stil.naslov}>Odaberi jezik</Text>
             <JezikBtn 
-                title="Engelski jezik" 
+                title="Engleski" 
                 onPress = {() => navigation.navigate('Razlog', {
                     jezik: 'eng'
                 })} 
             />
             <JezikBtn 
-                title="Njemački jezik" 
-                onPress = {() => {console.log("Klik", {
+                title="Njemački" 
+                onPress = {() => navigation.navigate('Razlog', {
                     jezik: 'deu'
-                })}} 
+                })}
             />
             <JezikBtn 
-                title="Talijanski jezik" 
-                onPress = {() => {console.log("Klik",{
+                title="Talijanski" 
+                onPress = {() => navigation.navigate('Razlog', {
                     jezik: 'ita'
-                })}} 
+                })}
             />
             <JezikBtn 
-                title="Španjolski jezik" 
-                onPress = {() => {console.log("Klik",{
+                title="Španjolski" 
+                onPress = {() => navigation.navigate('Razlog', {
                     jezik: 'spa'
-                })}} 
+                })}
             />
         </View>
     )
@@ -39,7 +39,7 @@ const OdabirJezika = ({ route, navigation }) => {
 const stil = StyleSheet.create({
     ekran: {
         alignItems: 'center',
-        marginTop: 180,
+        marginTop: 150,
     },
     naslov: {
         fontSize: 20,
