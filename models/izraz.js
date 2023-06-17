@@ -1,10 +1,9 @@
 class Izraz {
-    constructor(jezik, razlog, predznanje, fraza, prijevod){
+    constructor(jezik, razlog, predznanje, niz=[]){
         this.jezik = jezik;
         this.razlog = razlog;
         this.predznanje = predznanje;
-        this.fraza = fraza;
-        this.prijevod = prijevod
+        this.niz = niz
     }
 }
 
