@@ -42,7 +42,7 @@ const stil = StyleSheet.create({
         marginTop: 150,
     },
     naslov: {
-        fontSize: 20,
+        fontSize: 30,
         fontFamily: 'FaunaOne-Regular',
         color: Boje.Naslov,
     }

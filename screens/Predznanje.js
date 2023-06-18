@@ -7,7 +7,7 @@ const Predznanje = ({ route, navigation }) => {
     const { jezik, razlog } = route.params
     return(
         <View style={stil.ekran}>
-            <Text style={stil.naslov}>Odaberi jezik</Text>
+            <Text style={stil.naslov}>Kakvo je tvoje predznanje?</Text>
             <JezikBtn 
                 title="Početnik" 
                 onPress = {() => {navigation.navigate('Kviz', {
