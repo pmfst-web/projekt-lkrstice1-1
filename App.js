@@ -52,6 +52,9 @@ export default function App() {
           <Stack.Screen 
             name='Pocetna' 
             component={PocetniEkran} 
+            options={{
+              title: 'Odabir jezika'
+            }}
           />
           <Stack.Screen 
             name='Odabir' 
@@ -74,4 +77,3 @@ export default function App() {
     </Provider>
   );
 }
-
