@@ -19,6 +19,7 @@ const stil = StyleSheet.create({
         backgroundColor: Boje.Tipka,
         width: 200,
         height: 50,
+        marginBottom: 25
     },
     tekst: {
         color: Boje.Bijela,
