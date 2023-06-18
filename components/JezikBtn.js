@@ -16,15 +16,14 @@ const stil = StyleSheet.create({
     tipka: {
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: Boje.Jezik,
+        backgroundColor: Boje.Naslov,
         width: 340,
         height: 55,
         marginTop: 30,
-        borderWidth: 2,
-        borderColor: Boje.Bijela
+        borderRadius: 30
     },
     tekst: {
-        color: Boje.Naslov,
+        color: Boje.Bijela,
         fontSize: 18,
         fontWeight: 'bold'
     }
