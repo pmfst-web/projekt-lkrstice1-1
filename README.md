@@ -4,7 +4,7 @@
 - [x] - Prototip
 - [x] - Konzultacije
 - [x] - Finalna verzija
-- [ ] - Obrana projekta
+- [x] - Obrana projekta
 
 # Opis projekta
 Aplikacija za učenje stranih jezika. Korisnik odabere jezik koji želi naučiti te odabare razlog zbog kojeg ga želi naučiti te ima li prethodnog znanja tog jezika. Zatim se generiraju riječi i izrazi na odabranom jeziku te korisnik u obliku kviza bira odgovor tj. prijevod izraza.
